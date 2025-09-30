@@ -17,13 +17,13 @@ const THEME = {
 const Icons = {
   Logo: (props) => (
     <div
-      className="w-20 h-20 rounded-2xl flex items-center justify-center overflow-hidden"
+      className="w-36 h-36 rounded-2xl flex items-center justify-center overflow-hidden mx-auto mb-4"
       {...props}
     >
       <img
         src="https://i.postimg.cc/tTVQGWhz/Gemini-Generated-Image-6z95y36z95y36z95.png"
         alt="Placify Logo"
-        className="   m-auto items-center"
+        className="w-full h-full object-contain"
       />
     </div>
   ),
@@ -181,11 +181,11 @@ const StudentDashboard = ({ onLogout }) => {
       <nav className="bg-white p-4 shadow-md sticky top-0 z-10 flex justify-between items-center">
         <div className="flex items-center gap-3 text-xl font-bold text-orange-600">
           <Icons.NavIcon>🎓</Icons.NavIcon>
-          <span>Student Portal</span>
+          <span className="font-bold text-black">Student Portal</span>
         </div>
         <div className="flex items-center gap-4">
-          <span className="hidden sm:inline text-gray-800 font-medium">John Doe</span>
-          <div className="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center text-white font-semibold">JD</div>
+          <span className="hidden sm:inline text-black font-medium">Aarav Sharma</span>
+          <div className="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center text-white font-semibold">AS</div>
           <button onClick={onLogout} className="px-4 py-2 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-600 transition duration-300">
             Logout
           </button>
@@ -194,7 +194,7 @@ const StudentDashboard = ({ onLogout }) => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <header className="mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-1">Welcome Back, John! 👋</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-1">Welcome back, Aarav! 👋</h2>
           <p className="text-base text-gray-500">Track your applications and manage your profile</p>
         </header>
 
@@ -251,7 +251,7 @@ const StudentDashboard = ({ onLogout }) => {
                 <div className="flex justify-between items-start mb-3">
                   <div>
                     <div className="text-lg font-bold mb-1">Software Engineering Intern</div>
-                    <div className="text-sm text-gray-500">Tech Corp</div>
+                    <div className="text-sm text-gray-500">Infosys</div>
                   </div>
                   <Badge type="success">New</Badge>
                 </div>
@@ -269,7 +269,7 @@ const StudentDashboard = ({ onLogout }) => {
                 <div className="flex justify-between items-start mb-3">
                   <div>
                     <div className="text-lg font-bold mb-1">Data Analyst Internship</div>
-                    <div className="text-sm text-gray-500">Analytics Inc</div>
+                    <div className="text-sm text-gray-500">TCS</div>
                   </div>
                   <Badge type="info">Featured</Badge>
                 </div>
@@ -305,7 +305,7 @@ const StudentDashboard = ({ onLogout }) => {
               <tbody className="bg-white divide-y divide-gray-200">
                 <tr className="hover:bg-gray-50">
                   <td className="px-6 py-4 whitespace-nowrap">Full Stack Developer</td>
-                  <td className="px-6 py-4 whitespace-nowrap">WebTech Solutions</td>
+                  <td className="px-6 py-4 whitespace-nowrap">HCL Technologies</td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sep 15, 2025</td>
                   <td className="px-6 py-4 whitespace-nowrap"><Badge type="success">Shortlisted</Badge></td>
                   <td className="px-6 py-4 whitespace-nowrap">
@@ -314,7 +314,7 @@ const StudentDashboard = ({ onLogout }) => {
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-6 py-4 whitespace-nowrap">UI/UX Designer</td>
-                  <td className="px-6 py-4 whitespace-nowrap">Creative Studio</td>
+                  <td className="px-6 py-4 whitespace-nowrap">Design India</td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sep 10, 2025</td>
                   <td className="px-6 py-4 whitespace-nowrap"><Badge type="warning">Under Review</Badge></td>
                   <td className="px-6 py-4 whitespace-nowrap">
@@ -323,7 +323,7 @@ const StudentDashboard = ({ onLogout }) => {
                 </tr>
                 <tr className="hover:bg-gray-50">
                   <td className="px-6 py-4 whitespace-nowrap">Backend Developer</td>
-                  <td className="px-6 py-4 whitespace-nowrap">Cloud Systems</td>
+                  <td className="px-6 py-4 whitespace-nowrap">Cloud India</td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sep 5, 2025</td>
                   <td className="px-6 py-4 whitespace-nowrap"><Badge type="info">Applied</Badge></td>
                   <td className="px-6 py-4 whitespace-nowrap">
@@ -366,11 +366,11 @@ const CoordinatorDashboard = ({ onLogout }) => {
       <nav className="bg-white p-4 shadow-md sticky top-0 z-10 flex justify-between items-center">
         <div className="flex items-center gap-3 text-xl font-bold text-orange-600">
           <Icons.NavIcon>📊</Icons.NavIcon>
-          <span>Coordinator Portal</span>
+          <span className="font-bold text-black">Coordinator Portal</span>
         </div>
         <div className="flex items-center gap-4">
-          <span className="hidden sm:inline text-gray-800 font-medium">Dr. Smith</span>
-          <div className="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center text-white font-semibold">DS</div>
+          <span className="hidden sm:inline text-black font-medium">Dr. Meena Kumari</span>
+          <div className="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center text-white font-semibold">MK</div>
           <button onClick={onLogout} className="px-4 py-2 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-600 transition duration-300">
             Logout
           </button>
@@ -511,33 +511,33 @@ const CoordinatorDashboard = ({ onLogout }) => {
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <label className="block text-sm font-semibold text-gray-700">Position Title</label>
-                <input type="text" placeholder="e.g., Software Engineer Intern" className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 transition duration-300 bg-gray-50 focus:bg-white" required />
+                <input type="text" placeholder="e.g., Software Engineer Intern" className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 transition duration-300 bg-gray-50 focus:bg-white" required />
               </div>
               <div className="space-y-2">
                 <label className="block text-sm font-semibold text-gray-700">Company Name</label>
-                <input type="text" placeholder="e.g., Tech Corp" className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 transition duration-300 bg-gray-50 focus:bg-white" required />
+                <input type="text" placeholder="e.g., Infosys" className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 transition duration-300 bg-gray-50 focus:bg-white" required />
               </div>
             </div>
             <div className="grid sm:grid-cols-3 gap-4">
               <div className="space-y-2">
                 <label className="block text-sm font-semibold text-gray-700">Stipend (₹/month)</label>
-                <input type="number" placeholder="e.g., 30000" className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 transition duration-300 bg-gray-50 focus:bg-white" required />
+                <input type="number" placeholder="e.g., 30000" className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 transition duration-300 bg-gray-50 focus:bg-white" required />
               </div>
               <div className="space-y-2">
                 <label className="block text-sm font-semibold text-gray-700">Duration (months)</label>
-                <input type="number" placeholder="e.g., 6" className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 transition duration-300 bg-gray-50 focus:bg-white" required />
+                <input type="number" placeholder="e.g., 6" className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 transition duration-300 bg-gray-50 focus:bg-white" required />
               </div>
               <div className="space-y-2">
                 <label className="block text-sm font-semibold text-gray-700">Location</label>
-                <input type="text" placeholder="e.g., Remote" className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 transition duration-300 bg-gray-50 focus:bg-white" required />
+                <input type="text" placeholder="e.g., Remote" className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 transition duration-300 bg-gray-50 focus:bg-white" required />
               </div>
             </div>
             <div className="space-y-2">
               <label className="block text-sm font-semibold text-gray-700">Required Skills (comma-separated)</label>
-              <input type="text" placeholder="e.g., React, Node.js, MongoDB" className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 transition duration-300 bg-gray-50 focus:bg-white" required />
+              <input type="text" placeholder="e.g., React, Node.js, MongoDB" className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 transition duration-300 bg-gray-50 focus:bg-white" required />
             </div>
             <div className="flex gap-4 flex-wrap mt-2">
-              <button type="submit" className="px-5 py-3 bg-emerald-500 text-white font-semibold rounded-lg text-base hover:bg-emerald-600 transition duration-300">
+              <button type="submit" className="px-5 py-3 bg-gray-900 text-white font-semibold rounded-lg text-base hover:bg-black transition duration-300">
                 Post Opportunity
               </button>
               <button type="reset" className="px-5 py-3 bg-gray-100 text-gray-800 font-semibold rounded-lg text-base hover:bg-gray-200 transition duration-300">
@@ -585,11 +585,11 @@ const MentorDashboard = ({ onLogout }) => {
       <nav className="bg-white p-4 shadow-md sticky top-0 z-10 flex justify-between items-center">
         <div className="flex items-center gap-3 text-xl font-bold text-orange-600">
           <Icons.NavIcon>👨‍🏫</Icons.NavIcon>
-          <span>Mentor Portal</span>
+          <span className="font-bold text-black">Mentor Portal</span>
         </div>
         <div className="flex items-center gap-4">
-          <span className="hidden sm:inline text-gray-800 font-medium">Prof. Anderson</span>
-          <div className="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center text-white font-semibold">PA</div>
+          <span className="hidden sm:inline text-black font-medium">Prof. Rakesh Verma</span>
+          <div className="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center text-white font-semibold">RV</div>
           <button onClick={onLogout} className="px-4 py-2 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-600 transition duration-300">
             Logout
           </button>
@@ -727,11 +727,11 @@ const RecruiterDashboard = ({ onLogout }) => {
       <nav className="bg-white p-4 shadow-md sticky top-0 z-10 flex justify-between items-center">
         <div className="flex items-center gap-3 text-xl font-bold text-orange-600">
           <Icons.NavIcon>🏢</Icons.NavIcon>
-          <span>Recruiter Portal</span>
+          <span className="font-bold text-black">Recruiter Portal</span>
         </div>
         <div className="flex items-center gap-4">
-          <span className="hidden sm:inline text-gray-800 font-medium">HR Manager</span>
-          <div className="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center text-white font-semibold">HR</div>
+          <span className="hidden sm:inline text-black font-medium">HR Manager</span>
+          <div className="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center text-white font-semibold">HR</div>
           <button onClick={onLogout} className="px-4 py-2 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-600 transition duration-300">
             Logout
           </button>
@@ -754,7 +754,7 @@ const RecruiterDashboard = ({ onLogout }) => {
         {/* Recent Applications Table */}
         <div className="bg-white p-6 rounded-xl shadow-lg mb-6">
           <header className="flex justify-between items-center mb-5 pb-4 border-b-2 border-gray-100">
-            <h3 className="text-xl font-bold text-gray-800">Recent Applications</h3>
+              <h3 className="text-xl font-bold text-gray-800">Recent Applications</h3>
             <button className="px-4 py-2 bg-gray-100 text-gray-800 font-semibold rounded-lg text-sm hover:bg-gray-200">View All</button>
           </header>
           <div className="overflow-x-auto">
@@ -844,16 +844,16 @@ const RecruiterDashboard = ({ onLogout }) => {
             <form className="grid gap-4" onSubmit={handleSubmitFeedback}>
               <div className="space-y-2">
                 <label className="block text-sm font-semibold text-gray-700">Select Intern</label>
-                <select className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 transition duration-300 bg-gray-50 focus:bg-white" required>
+                <select className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 transition duration-300 bg-gray-50 focus:bg-white" required>
                   <option>Choose intern...</option>
-                  <option>Alice Johnson</option>
-                  <option>Bob Williams</option>
-                  <option>Carol Davis</option>
+                  <option>Aarav Sharma</option>
+                  <option>Siya Singh</option>
+                  <option>Rahul Verma</option>
                 </select>
               </div>
               <div className="space-y-2">
                 <label className="block text-sm font-semibold text-gray-700">Performance Rating</label>
-                <select className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 transition duration-300 bg-gray-50 focus:bg-white" required>
+                <select className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 transition duration-300 bg-gray-50 focus:bg-white" required>
                   <option>Select rating...</option>
                   <option>⭐⭐⭐⭐⭐ Excellent</option>
                   <option>⭐⭐⭐⭐ Very Good</option>
@@ -865,7 +865,7 @@ const RecruiterDashboard = ({ onLogout }) => {
                 <label className="block text-sm font-semibold text-gray-700">Feedback</label>
                 <textarea 
                   placeholder="Enter detailed feedback..." 
-                  className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 transition duration-300 bg-gray-50 focus:bg-white min-h-[100px]" 
+                  className="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 transition duration-300 bg-gray-50 focus:bg-white min-h-[100px]" 
                   required
                 ></textarea>
               </div>
@@ -960,14 +960,13 @@ const PlacementPortal = () => {
         }`;
 
         return (
-          <div className="min-h-screen flex items-center justify-center p-5" style={{ background: 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)' }}>
+          <div className="min-h-screen flex items-center justify-center p-5" style={{ background: '#e3f0ff' }}>
             <div className={loginCardClass}>
-              <header className="text-center mb-8">
+              <header className="flex flex-col items-center justify-center mb-8">
                 <Icons.Logo />
-                <h1 className="text-3xl font-bold text-gray-800 mt-4 mb-2">Placement Portal</h1>
-                <p className="text-sm text-gray-500">Centralized placement & internship management</p>
+                <h1 className="text-3xl font-bold text-black mt-4 mb-2 text-center">National Placement Portal</h1>
+                <p className="text-sm text-gray-600 text-center">Centralized placement & internship management for India</p>
               </header>
-              
               <form onSubmit={handleLogin}>
                 <div className="mb-5 space-y-2">
                   <label htmlFor="email" className="block text-sm font-semibold text-gray-700">Email Address</label>
@@ -977,11 +976,10 @@ const PlacementPortal = () => {
                     placeholder="Enter your email"
                     value={loginDetails.email}
                     onChange={handleLoginChange}
-                    className="w-full p-3 border-2 border-gray-300 rounded-xl text-base focus:outline-none focus:border-orange-500 transition duration-300 bg-gray-50 focus:bg-white"
+                    className="w-full p-3 border-2 border-gray-300 rounded-xl text-base focus:outline-none focus:border-blue-400 transition duration-300 bg-gray-50 focus:bg-white"
                     required
                   />
                 </div>
-                
                 <div className="mb-5 space-y-2">
                   <label htmlFor="password" className="block text-sm font-semibold text-gray-700">Password</label>
                   <input
@@ -990,18 +988,17 @@ const PlacementPortal = () => {
                     placeholder="Enter your password"
                     value={loginDetails.password}
                     onChange={handleLoginChange}
-                    className="w-full p-3 border-2 border-gray-300 rounded-xl text-base focus:outline-none focus:border-orange-500 transition duration-300 bg-gray-50 focus:bg-white"
+                    className="w-full p-3 border-2 border-gray-300 rounded-xl text-base focus:outline-none focus:border-blue-400 transition duration-300 bg-gray-50 focus:bg-white"
                     required
                   />
                 </div>
-                
                 <div className="mb-6 space-y-2">
                   <label htmlFor="role" className="block text-sm font-semibold text-gray-700">Select Role</label>
                   <select
                     id="role"
                     value={loginDetails.role}
                     onChange={handleLoginChange}
-                    className="w-full p-3 border-2 border-gray-300 rounded-xl text-base focus:outline-none focus:border-orange-500 transition duration-300 bg-gray-50 focus:bg-white"
+                    className="w-full p-3 border-2 border-gray-300 rounded-xl text-base focus:outline-none focus:border-blue-400 transition duration-300 bg-gray-50 focus:bg-white"
                     required
                   >
                     <option value="">Choose your role...</option>
@@ -1011,10 +1008,9 @@ const PlacementPortal = () => {
                     <option value="recruiter">Recruiter</option>
                   </select>
                 </div>
-                
                 <button
                   type="submit"
-                  className="w-full p-4 bg-gradient-to-r from-orange-600 to-orange-700 text-white font-bold rounded-xl text-lg cursor-pointer transition duration-300 hover:scale-[1.01] hover:shadow-xl"
+                  className="w-full p-4 bg-gray-900 text-white font-bold rounded-xl text-lg cursor-pointer transition duration-300 hover:scale-[1.01] hover:shadow-xl"
                   disabled={isLoginSliding}
                 >
                   Sign In
