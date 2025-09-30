@@ -888,6 +888,27 @@ const PlacementPortal = () => {
   const [loginDetails, setLoginDetails] = useState({ email: '', password: '', role: '' });
   const [isLoginSliding, setIsLoginSliding] = useState(false);
 
+  // Show toast notification when the login form mounts
+  useEffect(() => {
+    const showToast = (message) => {
+      const toast = document.createElement('div');
+      toast.className = 'fixed top-4 right-4 bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg transform transition-all duration-500 opacity-0 z-50';
+      toast.textContent = message;
+      document.body.appendChild(toast);
+      
+      // Trigger animation
+      setTimeout(() => toast.style.opacity = '1', 100);
+      
+      // Remove the toast after 5 seconds
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 500);
+      }, 5000);
+    };
+
+    showToast('This is a prototype - any email and password will work!');
+  }, []);
+
   const handleLoginChange = (e) => {
     setLoginDetails({ ...loginDetails, [e.target.id]: e.target.value });
   };
