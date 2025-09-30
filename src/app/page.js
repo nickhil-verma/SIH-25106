@@ -17,20 +17,26 @@ const THEME = {
 const Icons = {
   Logo: (props) => (
     <div
-      className="w-20 h-20 rounded-2xl flex items-center justify-center text-white text-4xl"
-      style={{ background: THEME.primary }}
+      className="w-20 h-20 rounded-2xl flex items-center justify-center overflow-hidden"
       {...props}
     >
-      🎓
+      <img
+        src="https://i.postimg.cc/tTVQGWhz/Gemini-Generated-Image-6z95y36z95y36z95.png"
+        alt="Placify Logo"
+        className="   m-auto items-center"
+      />
     </div>
   ),
   NavIcon: (props) => (
     <div
-      className="w-10 h-10 rounded-xl flex items-center justify-center text-white text-xl"
-      style={{ background: THEME.primary }}
+      className="  h-10 rounded-xl flex items-center justify-center overflow-hidden"
       {...props}
     >
-      {props.children}
+      <img
+        src="https://i.postimg.cc/tTVQGWhz/Gemini-Generated-Image-6z95y36z95y36z95.png"
+        alt="Placify Icon"
+        className="  h-full object-cover"
+      />
     </div>
   ),
 };
